@@ -1,0 +1,16 @@
+CARLA 0.9.13 Commands
+
+// Change map "in ../util"
+python config.py -m Town05c  // remember to change map before generate traffic or anything
+
+// Generate Traffics "in ../examples"
+python generate_traffic.py 
+
+// Change weather
+python config.py --weather ClearNoon # Change weather
+{ ClearNight, ClearNoon, ClearSunset, CloudyNight, CloudyNoon,
+    CloudySunset, Default, HardRainNight, HardRainNoon,
+    HardRainSunset, MidRainSunset, MidRainyNight, MidRainyNoon,
+    SoftRainNight, SoftRainNoon, SoftRainSunset, WetCloudyNight,
+    WetCloudyNoon, WetCloudySunset, WetNight, WetNoon, WetSunset.}
+
