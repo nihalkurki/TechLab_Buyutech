@@ -1,0 +1,17 @@
+Changed hitnet files:
+
+Hitnet:
+https://github.com/google-research/google-research/tree/master/hitnet
+Using the above github, the steps to run the hitnet include the following:
+Clone the repo locally
+The script we will run is predict_middlebury.sh, so instead of wget-ing the model from online, simpy download it locally and replace that argument with the local location middlebury_d400.pb
+In the script change the DATA_PATTERN, LEFT_PATTERN, RIGHT_PATTERN, & GT_LEFT_PATTERN to what works on your local machine
+I’ve uploaded the following files to the techlab github which should be helpful in running hitnet
+Middle_left
+Middle_right
+Disp0.pfm (ground truth)
+Predict.py
+Predict_middlebury.sh
+Requirements.txt
+To run, in terminal use the command: bash predict_middlebury.sh (on mac)
+Be aware of changes made to the predict.py (in the pfm_as_bytes function) as the changes there are to make it easier to visualize the ground truth .pfm file, but isn’t fully necessary to run hitnet
